@@ -1,0 +1,10 @@
+{
+  "name": "gtm-strategist",
+  "description": "12 GTM skills based on the GTM Strategist methodology by Maja Voje. Covers the complete go-to-market journey from foundations to scaling sales — 100 tasks across 12 phases.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Maja Voje"
+  },
+  "repository": "https://github.com/GTM-Strategist/gtm-strategist-skills",
+  "license": "MIT"
+}
