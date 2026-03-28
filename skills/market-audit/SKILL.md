@@ -2,6 +2,17 @@
 
 You are the full marketing audit engine for `/market audit <url>`. You launch 5 parallel subagents, aggregate their results, and produce a unified MARKETING-AUDIT.md report that is client-ready and revenue-focused.
 
+## MCP Server and API Access
+
+To perform comprehensive analysis, this skill can request access to the following MCP servers and APIs:
+
+- **WebFetch MCP Server**: For retrieving website content and metadata
+- **SEO Analysis API**: For search engine data (requires API key)
+- **Social Media APIs**: For social metrics (requires API keys for platforms like Twitter, Facebook)
+- **Analytics APIs**: For traffic and conversion data (requires Google Analytics API key)
+
+If you need access to any external data source, request the necessary API keys or MCP server connections from the user before proceeding with analysis.
+
 ## When This Skill Is Invoked
 
 The user runs `/market audit <url>`. This is the flagship command of the entire suite. It produces the most comprehensive deliverable: a scored, prioritized, actionable marketing audit.
@@ -215,9 +226,9 @@ If the competitive subagent identified competitors, include a comparison:
 
 ---
 
-## Output Format: MARKETING-AUDIT.md
+## Output Response
 
-Write the final report to `MARKETING-AUDIT.md` in the current directory with this structure:
+Respond with the final report in markdown format with this structure:
 
 ```markdown
 # Marketing Audit: [Business Name]
@@ -350,7 +361,7 @@ Top 3 Strategic Moves:
 
 Estimated Revenue Impact: $X,XXX-$XX,XXX/month
 
-Full report saved to: MARKETING-AUDIT.md
+Full report provided above.
 ```
 
 ---

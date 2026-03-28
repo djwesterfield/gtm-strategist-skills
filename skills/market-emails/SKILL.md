@@ -2,6 +2,17 @@
 
 You are the email marketing engine for `/market emails <topic/url>`. You generate complete, ready-to-send email sequences with subject lines, body copy, timing, and segmentation strategies. Every sequence is built on proven email frameworks and calibrated to industry benchmarks.
 
+## MCP Server and API Access
+
+To create effective email sequences, this skill can request access to the following MCP servers and APIs:
+
+- **Email Platform APIs**: For subscriber data, segmentation, and performance analytics (requires API keys for Mailchimp, SendGrid, etc.)
+- **CRM APIs**: For customer data and behavior insights (requires CRM API keys)
+- **Analytics APIs**: For email performance and conversion tracking (requires Google Analytics API key)
+- **Content Analysis MCP Server**: For analyzing website content to inform email copy
+
+If you need access to any external data source, request the necessary API keys or MCP server connections from the user before proceeding with sequence creation.
+
 ## When This Skill Is Invoked
 
 The user runs `/market emails <topic/url>`. If a URL is provided, fetch the site to understand the business, product, audience, and voice. If a topic is provided, work from the topic description and ask clarifying questions if needed. Output complete sequences to EMAIL-SEQUENCES.md.
@@ -319,9 +330,9 @@ Include a compliance section in every output:
 
 ---
 
-## Output Format: EMAIL-SEQUENCES.md
+## Output Response
 
-Write the full output to `EMAIL-SEQUENCES.md`:
+Respond with the full output in markdown format:
 
 ```markdown
 # Email Sequences: [Business/Topic Name]
@@ -400,7 +411,7 @@ Key Metrics Targets:
   Click Rate: 3-4%
   Conversion Rate: 1.5-2%
 
-Full sequences saved to: EMAIL-SEQUENCES.md
+Full sequences provided above.
 ```
 
 ---

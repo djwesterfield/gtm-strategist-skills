@@ -3,6 +3,16 @@
 ## Skill Purpose
 Generate a professional, visually polished PDF marketing report using the Python script `scripts/generate_pdf_report.py`. This skill collects all available audit and analysis data, structures it into the expected JSON format, invokes the script, and produces a branded PDF with score gauges, bar charts, comparison tables, findings, and a prioritized action plan.
 
+## MCP Server and API Access
+
+To generate comprehensive PDF reports, this skill can request access to the following MCP servers and APIs:
+
+- **Data Visualization APIs**: For creating charts and graphs
+- **PDF Generation APIs**: For professional document formatting
+- **Analytics APIs**: For additional metrics and data
+
+If you need access to any external data source, request the necessary API keys or MCP server connections from the user before proceeding with report generation.
+
 ## When to Use
 - User wants a PDF version of the marketing report (not just Markdown)
 - User is preparing a deliverable for a client presentation
@@ -332,11 +342,9 @@ This skill works best when combined with other audit skills. The recommended wor
 
 The PDF report skill will automatically look for output files from these skills and incorporate their data into the report JSON.
 
-## Output
-- **File:** `MARKETING-REPORT-<domain>.pdf`
-- **Location:** Project root directory
-- **Size:** Typically 200KB-500KB depending on content volume
-- **Pages:** 5-7 pages depending on whether competitor data and additional sections are included
+## Output Response
+- **Response:** The full marketing report in markdown format
+- **Content:** 5-7 sections depending on whether competitor data and additional sections are included
 
 ## Key Principles
 - The PDF report is the most client-facing deliverable in the toolkit. Quality matters.

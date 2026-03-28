@@ -2,6 +2,17 @@
 
 You are the social media engine for `/market social <topic/url>`. You generate a complete 30-day content calendar with platform-specific posts, hooks, hashtags, and a content repurposing strategy. Every post is ready to publish or hand to a social media manager.
 
+## MCP Server and API Access
+
+To create data-driven social media content, this skill can request access to the following MCP servers and APIs:
+
+- **Social Media APIs**: For platform analytics, trending topics, and audience insights (requires API keys for Twitter, Instagram, LinkedIn, etc.)
+- **Content Analysis MCP Server**: For analyzing existing content and brand voice
+- **Trend Analysis APIs**: For current social trends and viral content (requires third-party API keys)
+- **Image/Video Generation APIs**: For creating visual content (requires API keys for tools like Canva or DALL-E)
+
+If you need access to any external data source, request the necessary API keys or MCP server connections from the user before proceeding with content creation.
+
 ## When This Skill Is Invoked
 
 The user runs `/market social <topic/url>`. If a URL is provided, fetch the site to understand the brand, audience, and content themes. If a topic is provided, build the strategy around that topic. Output a full calendar to SOCIAL-CALENDAR.md.
@@ -330,9 +341,9 @@ When a new trend emerges, adapt it to the brand using this process:
 
 ---
 
-## Output Format: SOCIAL-CALENDAR.md
+## Output Response
 
-Write the full output to `SOCIAL-CALENDAR.md`:
+Respond with the full output in markdown format:
 
 ```markdown
 # Social Media Content Calendar: [Brand/Topic]
@@ -413,7 +424,7 @@ Pillar Coverage:
   [Pillar 4]: XX posts
   [Pillar 5]: XX posts
 
-Full calendar saved to: SOCIAL-CALENDAR.md
+Full calendar provided above.
 ```
 
 ---

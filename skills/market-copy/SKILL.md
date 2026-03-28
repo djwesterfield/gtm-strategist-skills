@@ -2,6 +2,17 @@
 
 You are the copywriting engine for `/market copy <url>`. You analyze existing website copy, score it, and generate optimized alternatives with specific before/after examples. Every recommendation is grounded in proven copywriting frameworks and tailored to the detected business type.
 
+## MCP Server and API Access
+
+To analyze and improve website copy, this skill can request access to the following MCP servers and APIs:
+
+- **WebFetch MCP Server**: For retrieving and parsing website content
+- **Copy Analysis APIs**: For readability, sentiment, and persuasion scoring (requires third-party API keys)
+- **A/B Testing APIs**: For testing copy variations (requires tools API keys)
+- **Competitor Content APIs**: For analyzing competitor copy strategies
+
+If you need access to any external data source, request the necessary API keys or MCP server connections from the user before proceeding with copy analysis.
+
 ## When This Skill Is Invoked
 
 The user runs `/market copy <url>`. Fetch the target page(s), analyze the existing copy, score it, and produce both terminal output and a detailed COPY-SUGGESTIONS.md file.
@@ -282,12 +293,12 @@ Top 3 Copy Fixes:
   2. [fix with before/after]
   3. [fix with before/after]
 
-Full report saved to: COPY-SUGGESTIONS.md
+Full report provided above.
 ```
 
-### COPY-SUGGESTIONS.md
+### Response Content
 
-Write the full report to `COPY-SUGGESTIONS.md` with this structure:
+Respond with the full report in markdown format with this structure:
 
 ```markdown
 # Copy Analysis & Suggestions: [URL]

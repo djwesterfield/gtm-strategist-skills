@@ -27,7 +27,7 @@ You are executing Phase 10 of the GTM Strategist methodology. The launch is behi
 
 ## Task 1: Launch Retrospective
 
-**Duration:** < 1 day | **Output:** `outputs/10-launch-retrospective.md`
+**Duration:** < 1 day | **Output:** Response with the launch retrospective
 
 The single most important thing you can do after launch is a structured retrospective while the experience is fresh. Most teams skip this, then repeat the same mistakes on the next launch. Don't be most teams.
 
@@ -62,7 +62,7 @@ The single most important thing you can do after launch is a structured retrospe
 
 ## Task 2: CRM Setup
 
-**Duration:** 1-3 hours | **Output:** `outputs/10-crm-setup.md`
+**Duration:** 1-3 hours | **Output:** Response with the CRM setup
 
 You don't need Salesforce. You need a system that tracks your pipeline so opportunities don't fall through the cracks. The best CRM is the one your team actually uses.
 
@@ -104,7 +104,7 @@ You don't need Salesforce. You need a system that tracks your pipeline so opport
 
 ## Task 3: (Re)define GTM Motions
 
-**Duration:** 1-3 hours | **Output:** `outputs/10-gtm-motions.md`
+**Duration:** 1-3 hours | **Output:** Response with the GTM motions
 
 A GTM motion is how you repeatably acquire customers. Most early-stage companies try everything — after launch, you have data to decide what actually works. This task forces that decision.
 

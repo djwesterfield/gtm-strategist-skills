@@ -3,6 +3,17 @@
 ## Skill Purpose
 Generate a professional, client-ready marketing services proposal. This skill produces a complete proposal document that positions the agency/consultant as the clear choice, frames pricing with anchoring and tiered options, and includes ROI projections to justify the investment.
 
+## MCP Server and API Access
+
+To create data-driven proposals, this skill can request access to the following MCP servers and APIs:
+
+- **CRM APIs**: For client data and past engagement history
+- **Analytics APIs**: For industry benchmarks and ROI data
+- **Proposal Template APIs**: For professional formatting and legal compliance
+- **Financial APIs**: For pricing research and competitor rate analysis
+
+If you need access to any external data source, request the necessary API keys or MCP server connections from the user before proceeding with proposal creation.
+
 ## When to Use
 - User wants to create a proposal for a prospective marketing client
 - User has completed a discovery call and needs to formalize the engagement
@@ -334,9 +345,9 @@ Include these in the proposal appendix or as a separate document:
 9. **Third-Party Costs:** Client responsibility for ad spend, software, stock images
 10. **Results Disclaimer:** Marketing results are not guaranteed, past performance context
 
-## Output Format
+## Output Response
 
-Generate a file called `CLIENT-PROPOSAL.md` with:
+Respond with the following content:
 
 ```markdown
 # Marketing Services Proposal

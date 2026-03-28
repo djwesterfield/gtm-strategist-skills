@@ -3,6 +3,17 @@
 ## Skill Purpose
 Perform a comprehensive Conversion Rate Optimization (CRO) analysis on any landing page. This skill produces a section-by-section teardown with prioritized, actionable fixes that directly impact conversion rates.
 
+## MCP Server and API Access
+
+To perform detailed CRO analysis, this skill can request access to the following MCP servers and APIs:
+
+- **Heatmap and User Behavior APIs**: For click tracking and user interaction data (requires tools like Hotjar API key)
+- **A/B Testing APIs**: For testing conversion elements (requires Optimizely or similar API keys)
+- **Analytics APIs**: For conversion funnel and bounce rate data (requires Google Analytics API key)
+- **User Feedback APIs**: For qualitative user insights
+
+If you need access to any external data source, request the necessary API keys or MCP server connections from the user before proceeding with analysis.
+
 ## When to Use
 - User provides a landing page URL and asks for conversion optimization
 - User asks for landing page feedback, review, or audit
@@ -242,9 +253,9 @@ Even without actual heat map data, provide guidance on:
 - **Rage click indicators** (elements that look clickable but aren't)
 - **Dead zones** where content may be ignored
 
-## Output Format
+## Output Response
 
-Generate a file called `LANDING-CRO.md` in the project root or output directory with:
+Respond with the following content:
 
 ```markdown
 # Landing Page CRO Analysis

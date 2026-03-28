@@ -3,6 +3,17 @@
 ## Skill Purpose
 Generate a complete, week-by-week launch playbook for any product, service, or feature launch. This skill produces a tactical plan with templates, checklists, email sequences, social posts, and metrics tracking -- everything needed to execute a successful launch.
 
+## MCP Server and API Access
+
+To create comprehensive launch plans, this skill can request access to the following MCP servers and APIs:
+
+- **Email Marketing APIs**: For audience segmentation and email sequence data
+- **Social Media APIs**: For scheduling and analytics
+- **Analytics APIs**: For tracking launch performance
+- **CRM APIs**: For lead management and follow-up
+
+If you need access to any external data source, request the necessary API keys or MCP server connections from the user before proceeding with launch planning.
+
 ## When to Use
 - User is planning to launch a new product, service, feature, or offering
 - User asks for a launch plan, go-to-market strategy, or launch checklist
@@ -410,9 +421,9 @@ After the launch, generate a retrospective covering:
 8. **Unexpected Insights**: Surprises from the data
 9. **Next Steps**: Immediate actions based on learnings
 
-## Output Format
+## Output Response
 
-Generate a file called `LAUNCH-PLAYBOOK.md` with:
+Respond with the following content:
 
 ```markdown
 # Launch Playbook: [Product Name]

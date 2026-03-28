@@ -3,6 +3,17 @@
 ## Skill Purpose
 Analyze a brand's voice, tone, and messaging across all available channels and generate a comprehensive brand voice guidelines document. This skill examines how a brand communicates, identifies patterns and inconsistencies, and produces actionable guidelines that any writer or marketer can follow to maintain brand consistency.
 
+## MCP Server and API Access
+
+To analyze brand voice across channels, this skill can request access to the following MCP servers and APIs:
+
+- **Social Media APIs**: For analyzing brand posts and engagement across platforms
+- **Content Analysis MCP Server**: For tone, sentiment, and style analysis
+- **Competitor Analysis APIs**: For comparing brand voice to competitors
+- **Web Scraping MCP Server**: For gathering content from multiple brand touchpoints
+
+If you need access to any external data source, request the necessary API keys or MCP server connections from the user before proceeding with analysis.
+
 ## When to Use
 - User wants to understand or document a brand's voice
 - User needs brand voice guidelines for a team, freelancers, or agency
@@ -329,9 +340,9 @@ Provide 5-8 sample copy pieces written in the identified brand voice so the team
 **8. Customer Thank You Message:**
 "[Sample thank you message in the brand voice]"
 
-## Output Format
+## Output Response
 
-Generate a file called `BRAND-VOICE.md` with:
+Respond with the following content:
 
 ```markdown
 # Brand Voice Guidelines

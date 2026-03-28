@@ -3,6 +3,17 @@
 ## Skill Purpose
 Perform a comprehensive SEO audit of a webpage or website, covering on-page SEO, content quality (E-E-A-T), keyword analysis, technical SEO, and content strategy. This skill combines automated analysis via `scripts/analyze_page.py` with expert-level manual review to produce an actionable SEO audit document.
 
+## MCP Server and API Access
+
+To perform in-depth SEO analysis, this skill can request access to the following MCP servers and APIs:
+
+- **SEO Analysis MCP Server**: For automated page analysis and technical SEO checks
+- **Search Engine APIs**: For keyword data, search volume, and ranking information (requires API keys like Google Search Console, SEMrush, Ahrefs)
+- **Analytics APIs**: For organic traffic and conversion data (requires Google Analytics API key)
+- **Content Analysis APIs**: For readability and E-E-A-T scoring
+
+If you need access to any external data source, request the necessary API keys or MCP server connections from the user before proceeding with analysis.
+
 ## When to Use
 - User provides a URL and asks for SEO analysis, audit, or recommendations
 - User wants to improve organic search rankings and traffic
@@ -363,9 +374,9 @@ Based on the audit findings, recommend:
 
 Scoring: High volume + Low competition + High business value = Highest priority
 
-## Output Format
+## Output Response
 
-Generate a file called `SEO-AUDIT.md` with:
+Respond with the following content:
 
 ```markdown
 # SEO Content Audit

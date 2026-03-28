@@ -2,6 +2,17 @@
 
 You are the competitive intelligence engine for `/market competitors <url>`. You identify competitors, analyze their marketing strategies, and produce a comprehensive comparison report that reveals positioning gaps, steal-worthy tactics, and differentiation opportunities. Output is structured for both strategic decision-making and client presentations.
 
+## MCP Server and API Access
+
+To gather competitive intelligence, this skill can request access to the following MCP servers and APIs:
+
+- **WebFetch MCP Server**: For retrieving competitor website content
+- **Search Engine APIs**: For finding competitors via search results (requires API key)
+- **Social Media APIs**: For competitor social metrics and engagement data
+- **Analytics APIs**: For competitor traffic and ranking data (requires third-party tools API keys)
+
+If you need access to any external data source, request the necessary API keys or MCP server connections from the user before proceeding with analysis.
+
 ## When This Skill Is Invoked
 
 The user runs `/market competitors <url>`. Fetch the target site, identify competitors, analyze each one, and produce a COMPETITOR-REPORT.md with actionable intelligence.
@@ -390,9 +401,9 @@ Provide guidance on how to respond to competitor moves:
 
 ---
 
-## Output Format: COMPETITOR-REPORT.md
+## Output Response
 
-Write the full output to `COMPETITOR-REPORT.md`:
+Respond with the full output in markdown format:
 
 ```markdown
 # Competitive Intelligence Report: [Target Brand]
@@ -523,7 +534,7 @@ Top 3 Actions:
   2. [action]
   3. [action]
 
-Full report saved to: COMPETITOR-REPORT.md
+Full report provided above.
 ```
 
 ---

@@ -3,6 +3,17 @@
 ## Skill Purpose
 Generate a comprehensive, professionally formatted marketing report in Markdown. This skill compiles data from all previous audit and analysis results into a single, client-ready document with scores, findings, recommendations, and a prioritized action plan with revenue impact estimates.
 
+## MCP Server and API Access
+
+To compile comprehensive reports, this skill can request access to the following MCP servers and APIs:
+
+- **Data Aggregation MCP Server**: For collecting and synthesizing data from multiple sources
+- **Analytics APIs**: For additional metrics and benchmarks (requires Google Analytics API key)
+- **Reporting APIs**: For professional report formatting and visualization
+- **CRM APIs**: For client-specific data integration
+
+If you need access to any external data source, request the necessary API keys or MCP server connections from the user before proceeding with report generation.
+
 ## When to Use
 - User wants a full marketing report for a client or their own business
 - User has completed one or more audit skills and wants a compiled report
@@ -253,9 +264,9 @@ Include methodology notes so the client understands how scores were derived:
 - Define marketing terms that a non-marketer client may not know
 - Keep it relevant to terms used in the report
 
-## Output Format
+## Output Response
 
-Generate a file called `MARKETING-REPORT.md` with:
+Respond with the following content:
 
 ```markdown
 # Marketing Report
